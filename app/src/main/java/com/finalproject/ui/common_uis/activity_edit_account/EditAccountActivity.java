@@ -50,6 +50,7 @@ public class EditAccountActivity extends BaseActivity {
     private Uri uri = null;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
