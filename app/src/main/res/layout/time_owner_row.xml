@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="lang"
+            type="String" />
+
+        <variable
+            name="model"
+            type="com.finalproject.model.Time" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:layout_margin="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="8dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:background="@drawable/small_stroke_grey13"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="4"
+            android:text="@{model.hour}"
+            android:textColor="@color/primary_dark2"
+            android:textSize="14sp" />
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <FrameLayout
+            android:id="@+id/imageDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/gray17" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_close"
+                app:tint="@color/color5"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</layout>
